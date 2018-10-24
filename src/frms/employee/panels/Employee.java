@@ -130,9 +130,9 @@ public class Employee extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-        button = 0;
-        CardLayout card = (CardLayout) pnlRight.getLayout();
-        card.show(pnlRight, "cardEmployee");
+//        button = 0;
+//        CardLayout card = (CardLayout) pnlRight.getLayout();
+//        card.show(pnlRight, "cardEmployee");
         setEmployeeInfoComponents(true);
         setBlankComponents();
     }//GEN-LAST:event_btnAddActionPerformed

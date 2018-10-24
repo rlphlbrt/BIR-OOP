@@ -275,9 +275,8 @@ public class Home extends javax.swing.JFrame {
     }
 
     private boolean isAccessGranted(String username, String password) {
-        mysql.Database.getFirstName = "ADMIN";
-        return username.equals("frms_pmis_bir")
-                && password.equals("feumathbirbaloreve");
+        mysql.Database.getFirstName = "asd";
+        return username.equals("admin") && password.equals("admin");
     }
 
     private void createPassword(String strUsername, String strPassword) {
