@@ -2,6 +2,7 @@ package frms.bre;
 
 import java.awt.*;
 import javax.swing.table.*;
+import java.sql.*;
 
 public class BRE extends javax.swing.JFrame {
 
@@ -377,7 +378,7 @@ public class BRE extends javax.swing.JFrame {
     }
 
     private void setBREInfoComponents(boolean b) {
-
+        frms.bre.panels.BREInfo BREInfo = new frms.bre.panels.BREInfo();
         BREInfo.lblItemTitle.setText((b ? "Add " : "Update ") + "Item");
         BREInfo.chkConfirm.setText((b ? "Add " : "Update ")
                 + "without confirm");

@@ -107,6 +107,11 @@ public class EmployeeInfo1 extends javax.swing.JPanel {
         cmbUserType.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         cmbUserType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "User", "Admin" }));
         cmbUserType.setSelectedIndex(-1);
+        cmbUserType.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbUserTypeActionPerformed(evt);
+            }
+        });
 
         lblreset.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         lblreset.setText("Reset Password:");
@@ -345,6 +350,11 @@ public class EmployeeInfo1 extends javax.swing.JPanel {
             txtDepartment.setText(text.substring(0, 32));
         }
     }//GEN-LAST:event_txtDepartmentKeyReleased
+
+    private void cmbUserTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbUserTypeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbUserTypeActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JButton btnSave;
     public static javax.swing.JCheckBox chkConfirm;
@@ -514,5 +524,12 @@ public class EmployeeInfo1 extends javax.swing.JPanel {
         //others
         cmbUserType.setSelectedIndex(-1);
         txtEmployeeNumber.requestFocusInWindow();
+    }
+    public static void main(String[] args) {
+         java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new EmployeeInfo1().setVisible(true);
+            }
+        });
     }
 }

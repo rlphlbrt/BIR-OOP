@@ -130,9 +130,9 @@ public class Employee extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-//        button = 0;
-//        CardLayout card = (CardLayout) pnlRight.getLayout();
-//        card.show(pnlRight, "cardEmployee");
+        button = 0;
+        CardLayout card = (CardLayout) pnlRight.getLayout();
+        card.show(pnlRight, "cardEmployee");                                     
         setEmployeeInfoComponents(true);
         setBlankComponents();
     }//GEN-LAST:event_btnAddActionPerformed
@@ -200,6 +200,7 @@ public class Employee extends javax.swing.JFrame {
      * Otherwise, the button btnUpdate is clicked.
      */
     private void setEmployeeInfoComponents(boolean b) {
+        frms.employee.panels.EmployeeInfo1 EmployeeInfo1 = new frms.employee.panels.EmployeeInfo1();
         EmployeeInfo1.txtEmployeeNumber.setEnabled(true); //Always enabled
         EmployeeInfo1.txtEmployeeNumber.requestFocusInWindow(); //Always focus
         if (b) {
